@@ -71,14 +71,14 @@ class LinearModel_Basmala:
         y_pred = self.predict(X_sorted)
         
         if self.regularization == "ridge":
-            model_name = "Ridge Regression"
+                model_name = "Ridge Regression"
         elif self.regularization == "lasso":
-            model_name = "Lasso Regression"
+                model_name = "Lasso Regression"
         else:
-            model_name = "Linear Regression"
+                model_name = "Linear Regression"
 
         if self.degree > 1:
-            model_name += f" (Degree {self.degree})"
+                model_name = "Polynomial Regression"
 
         plt.plot(X_sorted, y_pred, color="green", label=model_name)
 
