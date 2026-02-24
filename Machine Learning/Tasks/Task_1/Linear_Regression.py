@@ -50,8 +50,8 @@ class LinearRegression_Basmala:
         plt.title("Linear Regression Fit Line")
         plt.show()
         
-    # Bonus
-    
+        # Bonus
+        
     def mse(self, X, y):
         y_hat = self.predict(X)
         return np.mean((y - y_hat)**2)
